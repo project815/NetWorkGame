@@ -95,5 +95,8 @@ public class PacketQueue : MonoBehaviour
         //1. array : 포함된 요소를 지울 배열
         //2. 지울 요소의 범위의 시작 인덱스
         //3. 지울 요소의 개수
+
+        m_streamBuffer.Position = 0;
+        m_streamBuffer.SetLength(0);
     }
 }
